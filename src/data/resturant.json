@@ -1,0 +1,17 @@
+[
+    {
+        "id": "r1",
+        "name": "Soup Plaza",
+        "items": [
+            {
+                "id": "i1",
+                "name": "Pumpkin Soup",
+                "image": "('../../assets/images/pumpkin-soup.png')",
+                "calories": 320,
+                "time": 25,
+                "price": 950,
+                "description": "Creamy pumpkin soup."
+            }
+        ]
+    }
+] 
