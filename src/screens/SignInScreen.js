@@ -16,7 +16,7 @@ export default function SignInScreen({ navigation }) {
                 <Text style={styles.link}>Forgot password?</Text>
             </TouchableOpacity>
 
-            <TouchableOpacity style={styles.button} onPress={() => navigation.replace('Main')}>
+            <TouchableOpacity style={styles.button} onPress={() => navigation.replace('Home')}>
                 <Text style={styles.buttonText}>Sign In</Text>
             </TouchableOpacity>
 

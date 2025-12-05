@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
-import colors from '../theme/Colors';
+
 
 export default function VerifyEmailScreen({ navigation }) {
     const [code, setCode] = React.useState('');
@@ -29,7 +29,7 @@ export default function VerifyEmailScreen({ navigation }) {
                 <View style={styles.illustrationWrapper}>
                     {/* Replace with your verification illustration if you have one */}
                     <Image
-                        source={require('../../assets/images/welcome-elixir.png')}
+                        source={require('../../assets/images/verify-your-email.png')}
                         style={styles.illustration}
                         resizeMode="contain"
                     />

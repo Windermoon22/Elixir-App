@@ -2,7 +2,7 @@ import React from 'react';
 import { View, Text, TextInput, TouchableOpacity, StyleSheet, Image } from 'react-native';
 import { SafeAreaView } from 'react-native-safe-area-context';
 import { Ionicons } from '@expo/vector-icons';
-import colors from '../theme/Colors';
+
 
 export default function ResetPasswordScreen({ navigation }) {
     const [password, setPassword] = React.useState('');
@@ -24,7 +24,7 @@ export default function ResetPasswordScreen({ navigation }) {
                 <View style={styles.illustrationWrapper}>
                     {/* Replace with your own illustration if available */}
                     <Image
-                        source={require('../../assets/images/welcome-elixir.png')}
+                        source={require('../../assets/images/create-new-password.png')}
                         style={styles.illustration}
                         resizeMode="contain"
                     />

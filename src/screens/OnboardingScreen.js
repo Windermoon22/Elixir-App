@@ -25,7 +25,7 @@ export default function OnboardingScreen({ navigation }) {
 
     const goNext = () => {
         if (index < slides.length - 1) setIndex(index + 1);
-        navigation.replace('Home');
+        navigation.replace('SignIn');
 ;
     };
 

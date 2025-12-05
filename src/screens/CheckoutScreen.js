@@ -36,7 +36,7 @@ export default function CheckoutScreen({ navigation }) {
                     </View>
                     <TouchableOpacity
                         style={styles.button}
-                        onPress={() => navigation.navigate('PaymentTab')}
+                        onPress={() => navigation.navigate('SuccessScreen')}
                     >
                         <Text style={styles.buttonText}>Go to payment</Text>
                     </TouchableOpacity>
