@@ -2,7 +2,8 @@
 import React from 'react';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons } from '@expo/vector-icons';
-import HomeStack from './HomeStack';
+
+import HomeScreen from '../screens/HomeScreen';
 import CheckoutScreen from '../screens/CheckoutScreen';
 
 const Tab = createBottomTabNavigator();
@@ -22,10 +23,14 @@ export default function Maintabs() {
         >
             <Tab.Screen
                 name="HomeTab"
-                component={HomeStack}
+                component={HomeScreen}
                 options={{
                     tabBarIcon: ({ focused }) => (
-                        <Ionicons name={focused ? 'home' : 'home-outline'} size={24} color="#000" />
+                        <Ionicons
+                            name={focused ? 'home' : 'home-outline'}
+                            size={24}
+                            color="#000"
+                        />
                     ),
                 }}
             />
@@ -34,11 +39,14 @@ export default function Maintabs() {
                 component={CheckoutScreen}
                 options={{
                     tabBarIcon: ({ focused }) => (
-                        <Ionicons name={focused ? 'cart' : 'cart-outline'} size={24} color="#000" />
+                        <Ionicons
+                            name={focused ? 'cart' : 'cart-outline'}
+                            size={24}
+                            color="#000"
+                        />
                     ),
                 }}
             />
         </Tab.Navigator>
     );
 }
-
